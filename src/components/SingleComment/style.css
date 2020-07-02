@@ -1,0 +1,25 @@
+.container_flex{
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  width:30%;
+  height:auto;
+}
+
+.commentBox{
+  border: yellow 2px double;
+  border-radius: 25px;
+  box-shadow: 5px 5px rgb(220, 91, 16);
+  margin-top: 1rem;
+  margin-left: 2em;
+  padding: 1em;
+  flex: 1 0 49%;
+}
+.comment{
+  text-decoration-style: wavy;
+  text-align:left;
+}
+.person{
+font-weight: bold;
+text-align: right;
+}

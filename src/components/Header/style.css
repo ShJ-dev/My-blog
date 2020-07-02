@@ -1,0 +1,16 @@
+.navBar{
+  display:flex;
+  border:double 2px black;
+}
+.navLinks{
+  padding-right: 2px;
+  margin-right: 1rem;
+  color:black;
+  text-decoration: none;
+}
+.navLinks:hover{
+  background-color:lightskyblue;
+}
+.loginModal{
+  float:right;
+}
