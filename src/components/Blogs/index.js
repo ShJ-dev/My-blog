@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import axios from 'axios';
-//import CardGroup from 'react-bootstrap/CardGroup';
+import {LoadingContext} from '../../containers/Home/index';
 import './style.css';
 import SingleBlog from '../SingleBlog';
 
 function Blog() {
   const [blogs, setBlogs] = useState([]);
+  const context =useContext(LoadingContext);
 
   useEffect(() => {
     axios
@@ -13,13 +14,17 @@ function Blog() {
       .then((response) => {
         console.log(response);
         setBlogs(response.data);
+        context.setLoading(true);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  },[]);
 
   return (
+    <React.Fragment>
+      <div>
+      <h2 className="blogHeading">Blogs</h2>
     <div className="blogCard">
       <div className="blog"> 
         {blogs.map((blog) => {
@@ -27,6 +32,8 @@ function Blog() {
         })}
     </div>
     </div>
+    </div>
+    </React.Fragment>
   );
 }
 

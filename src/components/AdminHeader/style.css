@@ -1,6 +1,9 @@
 .navBar{
   display:flex;
+  position:fixed;
+  width:99%;
   border:double 2px black;
+  background-color: #22d1ee;
 }
 .navLinks{
   padding-right: 2px;
@@ -9,8 +12,5 @@
   text-decoration: none;
 }
 .navLinks:hover{
-  background-color:lightskyblue;
-}
-.loginModal{
-  float:right;
+ opacity: 0.7;
 }

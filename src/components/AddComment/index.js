@@ -2,9 +2,10 @@ import React, {useEffect, useState } from 'react';
 import useComment from '../Hooks/useComment';
 
 const inputStyle = {
-  width: '100%',
-  background: 'navyblue',
-  height: 'auto',
+  width: '98%',
+  height:'1.5rem',
+  background: '#fee9d7',
+  boxRadius:'20px',
 };
 
 function AddComment() {
@@ -30,8 +31,9 @@ function AddComment() {
 
   return (
     <div>
+      <h2 className="commentHeading">Add a Comment</h2>
       <form>
-        <label>Name:</label>
+        <label><strong>Name:</strong></label>
 
         <input
           onChange={(e) => {
@@ -42,8 +44,8 @@ function AddComment() {
           value={name}
           placeholder='Type your name...'
         />
-
-        <label>Comment:</label>
+  <br/>
+<label><strong>Comment:</strong></label>
 
         <input
           style={inputStyle}

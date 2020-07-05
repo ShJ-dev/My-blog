@@ -1,0 +1,22 @@
+.navBar{
+  display:inline-flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  background-color:#f5eded !important ;
+  border:double 2px black;
+}
+.navLinks{
+  text-decoration: none;
+  margin-left: 4px;
+}
+@media only screen and (max-width:768px){
+  .navLinks{
+    text-decoration: none;
+  }
+}
+.navLinks:hover{
+  opacity:0.7;
+}
+.loginModal{
+  float:right;
+}

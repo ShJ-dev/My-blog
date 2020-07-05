@@ -1,9 +1,11 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './containers/Home';
 import Admin from './containers/Admin';
 
+
 export const TokenContext = React.createContext();
+export const AdminContext = React.createContext();
 
 function App() {
   const [token, setToken] = useState('');
@@ -11,13 +13,15 @@ function App() {
   return (
     <div className='App'>
       {token ? (
-        <TokenContext.Provider value={{setToken:setToken}}>
-          <Admin />
-        </TokenContext.Provider>
+        <AdminContext.Provider value={token}>
+          <TokenContext.Provider value={{ setToken: setToken }}>
+            <Admin />
+          </TokenContext.Provider>
+        </AdminContext.Provider>
       ) : (
-        <TokenContext.Provider value={{setToken:setToken}}>
+        <TokenContext.Provider value={{ setToken: setToken }}>
           <Home />
-        </TokenContext.Provider  >
+        </TokenContext.Provider>
       )}
     </div>
   );

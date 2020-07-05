@@ -7,19 +7,28 @@
 }
 
 .commentBox{
-  border: yellow 2px double;
+  border: #eac100 2px double;
   border-radius: 25px;
-  box-shadow: 5px 5px rgb(220, 91, 16);
+  box-shadow: 5px 5px #d72323;
   margin-top: 1rem;
   margin-left: 2em;
   padding: 1em;
   flex: 1 0 49%;
+  background-image: linear-gradient(to right, rgb(28, 146, 210), rgb(242, 252, 254));
 }
 .comment{
   text-decoration-style: wavy;
   text-align:left;
+  color:yellow
 }
 .person{
 font-weight: bold;
 text-align: right;
+}
+@media only screen and (max-width:768px){
+  .container_flex{
+    width: 48%;
+    height:auto;
+    margin-right:4px;
+  }
 }
