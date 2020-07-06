@@ -94,7 +94,7 @@ function SingleBlog(props) {
 
           <button
             style={{
-              backgroundColor: 'white',
+              backgroundImage:'linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76))',
               border: 'none',
               marginBottom: '2.35em',
             }}
