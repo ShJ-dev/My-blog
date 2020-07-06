@@ -1,17 +1,24 @@
 .navBar{
   display:inline-flex;
-  flex-wrap: wrap;
+  width:90%;
   justify-content:flex-start;
   background-color:#f5eded !important ;
   border:double 2px black;
 }
 .navLinks{
   text-decoration: none;
-  margin-left: 4px;
+  margin-left: 2px;
 }
 @media only screen and (max-width:768px){
   .navLinks{
     text-decoration: none;
+  }
+  .navBar{
+    display:inline-flex;
+    width:375.2px;
+    justify-content:center;
+    background-color:#f5eded !important ;
+    border:double 2px black;
   }
 }
 .navLinks:hover{

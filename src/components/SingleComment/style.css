@@ -30,7 +30,7 @@ text-align: right;
   display:inline-flex;
   flex-basis: auto;
   justify-content:flex-start;
-  width:50%;
+  width:48%;
   height:auto;
   }
   .commentBox{
@@ -39,7 +39,7 @@ text-align: right;
     box-shadow: 5px 5px #d72323;
     margin-top: 1rem;
     margin-right: 2em;
-    flex: 0 0 50%;
+    flex: 1 0 48%;
     background-image: linear-gradient(to right, rgb(28, 146, 210), rgb(242, 252, 254));
   }
 }
