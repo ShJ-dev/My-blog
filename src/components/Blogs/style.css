@@ -13,10 +13,19 @@
   height:75%
 }
 
-.blogCard{
-  margin:0 auto;
-}
+
 .blogHeading{
   font-family: 'Merriweather', serif;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
+  justify-content: center;
+}
+@media only screen and (max-width:768px){
+  .blog{
+    max-width: 90%;
+    margin-left: 10px;
+  height:auto;
+  padding:1em 1em;
+  margin:1em;
+  display:inline-block;
+  }
 }

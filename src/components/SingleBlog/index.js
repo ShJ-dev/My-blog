@@ -19,22 +19,6 @@ function SingleBlog(props) {
     color: '#a83f39',
   };
 
-  const mystyle = {
-    border: 'solid 1px grey',
-    padding: '4px',
-    width: '80%',
-    height: 'auto',
-    margin: '4px 0px',
-    backgroundImage:"linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237))"
-    
-  };
-
-  const cardstyle = {
-    border: 'solid 2px black',
-    borderRadius:"20px",
-    margin: '1em',
-    backgroundImage:"linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76))"
-  };
 
   const editstyle = {
     marginLeft: '40%',
@@ -96,12 +80,12 @@ function SingleBlog(props) {
   return (
     <React.Fragment>
       <div>
-        <Card style={cardstyle}>
+        <Card className="cardStyle">
           <Card.Img
             variant='top'
             alt='Insert Image'
             src={'https://blog-server1.herokuapp.com/' + props.data.blogImage}
-            style={mystyle}
+            className="myStyle"
           />
           <Card.Body>
             <Card.Title className="blogTitle"><strong>{props.data.title}</strong></Card.Title>

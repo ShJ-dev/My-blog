@@ -10,3 +10,40 @@
   font-size: 1em;
   font-weight: 550;
 }
+.myStyle{
+    
+  border: solid 1px grey;
+  padding: 4px;
+  width: 80%;
+  height: auto;
+  margin: 4px 0px;
+  background-image:linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+  
+}
+.cardStyle{
+   border: solid 2px black;
+    border-radius:20px;
+    margin:0.25em;
+    background-image: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+}
+@media only screen and (max-width:768px){
+  .myStyle{
+    
+      border: solid 1px grey;
+      border-radius: 15px;
+      padding: 4px;
+      width: 95%;
+      height: auto;
+      margin: 4px 0px;
+      background-image:linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+      
+  }
+
+  .cardStyle{
+    border: solid 2px black;
+     border-radius:20px;
+     margin-top:10px;
+     padding:2px;
+     background-image: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+ }
+}

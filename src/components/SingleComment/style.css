@@ -27,8 +27,19 @@ text-align: right;
 }
 @media only screen and (max-width:768px){
   .container_flex{
-    width: 48%;
-    height:auto;
-    margin-right:4px;
+  display:inline-flex;
+  flex-basis: auto;
+  justify-content:flex-start;
+  width:50%;
+  height:auto;
+  }
+  .commentBox{
+    border: #eac100 2px double;
+    border-radius: 25px;
+    box-shadow: 5px 5px #d72323;
+    margin-top: 1rem;
+    margin-right: 2em;
+    flex: 0 0 50%;
+    background-image: linear-gradient(to right, rgb(28, 146, 210), rgb(242, 252, 254));
   }
 }
